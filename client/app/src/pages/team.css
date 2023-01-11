@@ -11,6 +11,7 @@
     width: 17%;
     overflow: hidden;
     font-size:medium;
+    border-radius: 20px 0px;
     box-shadow: 2px 2px goldenrod;
 }
 .cards .card .img img{
