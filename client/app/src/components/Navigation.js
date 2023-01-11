@@ -21,13 +21,13 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <NavLink to="/" onClick={() => setShowMediaIcons(!showMediaIcons)}>The JOURNEY</NavLink>
+              <NavLink to="/journey" onClick={() => setShowMediaIcons(!showMediaIcons)}>The JOURNEY</NavLink>
             </li>
             <li>
-              <NavLink to="/about" onClick={() => setShowMediaIcons(!showMediaIcons)}>TEAM</NavLink>
+              <NavLink to="/team" onClick={() => setShowMediaIcons(!showMediaIcons)}>TEAM</NavLink>
             </li>
             <li>
-              <NavLink to="/service" onClick={() => setShowMediaIcons(!showMediaIcons)}>STORE</NavLink>
+              <NavLink to="/store" onClick={() => setShowMediaIcons(!showMediaIcons)}>STORE</NavLink>
             </li>
             <li>
               <NavLink to="/contact" onClick={() => setShowMediaIcons(!showMediaIcons)}>CONTACT</NavLink>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
         <div className="login">
         <li>
-              <NavLink to="/contact" onClick={() => setShowMediaIcons(!showMediaIcons)}>LOGIN/SIGNUP</NavLink>
+              <NavLink to="/login" onClick={() => setShowMediaIcons(!showMediaIcons)}>👤</NavLink>
             </li>
         </div>
       </nav>
