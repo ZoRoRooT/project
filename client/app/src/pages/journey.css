@@ -1,0 +1,31 @@
+.divcenter {
+    width: 80%;
+    margin: 20px 10%;
+    border: 1px solid;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1456894332557-b03dc5cf60d5");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    
+    color: white;
+    
+}
+.divcenter h1{
+    font-size:xx-large
+    
+}
+.text h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.text{
+    background-image:linear-gradient(
+      rgba(8, 8, 8, 0.45), 
+      rgb(0, 0, 0)
+    );
+    margin: 20% auto ;
+    padding: 0px 10%;
+    height: 70vh;
+    font-size: medium;
+}

@@ -3,9 +3,11 @@ import "./navbar.css";
 import weblog from "../assets/websitelogo.png"
 
 import { NavLink } from "react-router-dom";
+import { connect } from "react-redux";
 
-const Navbar = () => {
+const Navigation = (props) => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  console.log(props.name);  
   return (
     <>
       <nav className="main-nav">
@@ -13,7 +15,7 @@ const Navbar = () => {
         <div className="logo">
                 <img src={weblog} alt="" />
         </div>
-
+      
        
         <div
           className={
@@ -42,7 +44,7 @@ const Navbar = () => {
         </div>
         <div className="login">
         <li>
-              <NavLink to="/login" onClick={() => setShowMediaIcons(!showMediaIcons)}>👤</NavLink>
+              <NavLink to="/login" onClick={!window.localStorage.getItem('token')?() => setShowMediaIcons(!showMediaIcons): {} }>👤{props.name}</NavLink>
             </li>
         </div>
       </nav>
@@ -52,4 +54,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default connect(store=>store) (Navigation);
